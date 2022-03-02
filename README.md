@@ -1,9 +1,5 @@
 # SignWell
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sign_well`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Every request returns a response object. You can call `body` or `to_object` on this to get either the json body or a Ruby object.
+
+### Setup
+
+You will need an `x_api_key` from SignWell to start. After that, you simply initialize the client. 
+
+```
+client = SignWell::Client.new(x_api_key: ENV['X_API_KEY'])
+
+```
+
+## Get Document
+
+```
+response = client.document('docment_id')
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## Create Document
+
+```
+client.create_document(test_mode: true, files: [{name: 'test', file_url: 'exmpaledoc.com'}], recipients: [{id: 1, email: 'william@test.com'}])
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## Create Document from Template
+
+```
+client.create_document_from_template(test_mode: true, template_id: '123')
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+
+
 
 ## Development
 

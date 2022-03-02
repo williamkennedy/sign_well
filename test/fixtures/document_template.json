@@ -1,0 +1,311 @@
+{
+  "id": "b138f8ba-6f0a-4119-a2b7-439f0778a3e9",
+  "allow_decline": true,
+  "apply_signing_order": false,
+  "archived": false,
+  "copied_contacts": [
+    {
+      "email": "cc1@domain.com",
+      "name": "CC one"
+    },
+    {
+      "email": "cc2@domain.com",
+      "name": "CC 2"
+    }
+  ],
+  "custom_requester_name": "Requester",
+  "custom_requester_email": "requester@domain.com",
+  "created_at": "2022-02-15T15:41:17Z",
+  "decline_redirect_url": "https://www.domain.com/decline_path/",
+  "embedded_signing": false,
+  "embedded_edit_url": "",
+  "expires_in": 365,
+  "fields": [
+    [
+      {
+        "api_id": "CheckBox_1",
+        "page": 1,
+        "required": true,
+        "type": "CheckBox",
+        "value": "t",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "recipient_id": "recipient_1"
+      },
+      {
+        "api_id": "DateField_1",
+        "page": 1,
+        "required": true,
+        "type": "DateField",
+        "value": "05/06/2021",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "date_format": "MM/DD/YYYY",
+        "lock_sign_date": false,
+        "recipient_id": "recipient_1"
+      },
+      {
+        "api_id": "DateField_2",
+        "page": 1,
+        "required": true,
+        "type": "DateField",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "date_format": "MM/DD/YYYY",
+        "lock_sign_date": true,
+        "recipient_id": "recipient_1"
+      },
+      {
+        "api_id": "Signature_1",
+        "page": 1,
+        "required": true,
+        "type": "Signature",
+        "value": "",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "recipient_id": "document_sender"
+      },
+      {
+        "api_id": "TextField_1",
+        "page": 1,
+        "required": true,
+        "type": "TextField",
+        "value": "a_valid_email@domain.com",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "fixed_width": false,
+        "label": "",
+        "validation": "no_text_validation",
+        "recipient_id": "recipient_1"
+      }
+    ],
+    [
+      {
+        "api_id": "Initials_1",
+        "page": 1,
+        "required": true,
+        "type": "Initials",
+        "value": "",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "recipient_id": "document_sender"
+      },
+      {
+        "api_id": "TextField_1_1",
+        "page": 1,
+        "required": true,
+        "type": "TextField",
+        "value": "a_valid_email@domain.com",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "fixed_width": false,
+        "label": "",
+        "validation": "email_address",
+        "recipient_id": "recipient_2"
+      },
+      {
+        "api_id": "TextField_2",
+        "page": 1,
+        "required": true,
+        "type": "TextField",
+        "value": "",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "fixed_width": false,
+        "label": "",
+        "validation": "no_text_validation",
+        "recipient_id": "recipient_2"
+      }
+    ],
+    [
+      {
+        "api_id": "DateField_1_1",
+        "page": 1,
+        "required": true,
+        "type": "DateField",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 230,
+        "y": 60,
+        "date_format": "DD/MM/YYYY",
+        "lock_sign_date": true,
+        "recipient_id": "recipient_1"
+      },
+      {
+        "api_id": "DateField_2_1",
+        "page": 1,
+        "required": true,
+        "type": "DateField",
+        "value": "05/06/2021",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 230,
+        "y": 120,
+        "date_format": "MM/DD/YYYY",
+        "lock_sign_date": false,
+        "recipient_id": "recipient_1"
+      }
+    ],
+    [
+      {
+        "api_id": "CheckBox_3",
+        "page": 1,
+        "required": true,
+        "type": "CheckBox",
+        "value": "t",
+        "width": "13.0",
+        "height": "13.0",
+        "x": 260,
+        "y": 80,
+        "recipient_id": "recipient_2"
+      },
+      {
+        "api_id": "Initials_4",
+        "page": 2,
+        "required": true,
+        "type": "Initials",
+        "value": null,
+        "width": "44.0",
+        "height": "32.0",
+        "x": 260,
+        "y": 80,
+        "recipient_id": "recipient_2"
+      },
+      {
+        "api_id": "Signature_1_1",
+        "page": 2,
+        "required": true,
+        "type": "Signature",
+        "value": null,
+        "width": "112.0",
+        "height": "32.0",
+        "x": 260,
+        "y": 80,
+        "recipient_id": "recipient_2"
+      },
+      {
+        "api_id": "TextField_5",
+        "page": 1,
+        "required": true,
+        "type": "TextField",
+        "value": "123456",
+        "width": "86.0",
+        "height": "19.0",
+        "x": 260,
+        "y": 80,
+        "fixed_width": true,
+        "label": "label",
+        "validation": "numbers",
+        "recipient_id": "recipient_2"
+      }
+    ]
+  ],
+  "message": "Normal Body",
+  "metadata": {
+    "key1": "value1",
+    "key2": "value2"
+  },
+  "name": "Agreement",
+  "recipients": [
+    {
+      "id": "document_sender",
+      "body": null,
+      "email": "document_sender@domain.com",
+      "name": "Recipient 0",
+      "passcode": "123",
+      "subject": null,
+      "status": "created",
+      "placeholder_name": "Document Sender",
+      "signing_url": null,
+      "send_email": false,
+      "message": null
+    },
+    {
+      "id": "recipient_1",
+      "body": null,
+      "email": "recipient_1@domain.com",
+      "name": "Recipient 1",
+      "passcode": null,
+      "subject": null,
+      "status": "created",
+      "placeholder_name": "Placeholder 1",
+      "attachment_requests": [
+        {
+          "name": "normal name",
+          "url": "https://www.signwell.com/document_attachments/Y0r5zqrY0aSoeyBgeoYgFnge4mr/?access=6d46091f-cd11-49ec-a0ca-3eb9711dd684",
+          "required": true
+        }
+      ],
+      "signing_url": null,
+      "send_email": false,
+      "message": null
+    },
+    {
+      "id": "recipient_2",
+      "body": null,
+      "email": "recipient_2@domain.com",
+      "name": "Recipient 2",
+      "passcode": null,
+      "subject": null,
+      "status": "created",
+      "placeholder_name": "Placeholder 2",
+      "attachment_requests": [
+        {
+          "name": "Driver License",
+          "url": "https://www.signwell.com/document_attachments/JYn7zmQ46DFPdllaXNz6hOOQzQWw/?access=6d46091f-cd11-49ec-a0ca-3eb9711dd684",
+          "required": false
+        }
+      ],
+      "signing_url": null,
+      "send_email": false,
+      "message": null
+    }
+  ],
+  "redirect_url": "https://www.domain.com/redirect_path/",
+  "reminders": true,
+  "requester_email_address": "goldenfold.7.mr@example.net",
+  "status": "Created",
+  "subject": "Normal subject",
+  "test_mode": false,
+  "updated_at": "2022-02-15T15:41:17Z",
+  "template_ids": [
+    "9d79b093-9205-4246-b0d2-cba454cbb713",
+    "f20c4d44-d783-49b0-b3fd-d7c35976f8f5"
+  ],
+  "files": [
+    {
+      "name": "guess_copy/sunt.xlsx",
+      "pages_number": 2
+    },
+    {
+      "name": "twilight-bless/modi.avi",
+      "pages_number": 2
+    },
+    {
+      "name": "filename1.pdf",
+      "pages_number": 0
+    },
+    {
+      "name": "filename2.pdf",
+      "pages_number": 0
+    }
+  ]
+}

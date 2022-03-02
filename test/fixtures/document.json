@@ -1,0 +1,70 @@
+{
+  "id": "c385c541-b05f-4f51-a2df-d7595f2bf25f",
+  "allow_decline": true,
+  "apply_signing_order": false,
+  "archived": false,
+  "copied_contacts": [],
+  "custom_requester_name": "Mace Windu",
+  "custom_requester_email": "cordie@adams.name",
+  "created_at": "2022-02-15T15:41:15Z",
+  "decline_redirect_url": "http://mcclure.com/jesusa",
+  "embedded_signing": false,
+  "embedded_edit_url": "",
+  "expires_in": 10,
+  "fields": [
+    [
+      {
+        "api_id": "CheckBox_1",
+        "page": 1,
+        "required": true,
+        "type": "CheckBox",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "recipient_id": "1"
+      }
+    ]
+  ],
+  "message": "Laboriosam molestiae qui animi.",
+  "metadata": {
+    "fuga": "omnis",
+    "officia": "quibusdam"
+  },
+  "name": "curriculum-push/suscipit.gif",
+  "recipients": [
+    {
+      "id": "1",
+      "body": null,
+      "email": "jerrod@yundt.info",
+      "name": "Buffy Woman",
+      "passcode": "123",
+      "subject": null,
+      "status": "created",
+      "attachment_requests": [
+        {
+          "name": "drill-hypothesis/distinctio.ods",
+          "url": "https://www.signwell.com/document_attachments/vgzbyPyM58uM3GpMaoakTLgQWELQ/?access=33fd2cb3-3e45-4870-9be1-323cc9a48db1",
+          "required": true
+        }
+      ],
+      "signing_url": null,
+      "send_email": null,
+      "message": null
+    }
+  ],
+  "redirect_url": "http://kuhic.io/woodrow",
+  "reminders": false,
+  "requester_email_address": "1_snowball@example.org",
+  "status": "Created",
+  "subject": "quaerat",
+  "test_mode": false,
+  "updated_at": "2022-02-15T15:41:15Z",
+  "files": [
+    {
+      "name": "conglomerate_freckle/ut.txt",
+      "pages_number": 1
+    }
+  ]
+}

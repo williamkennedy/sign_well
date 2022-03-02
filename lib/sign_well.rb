@@ -1,8 +1,18 @@
 # frozen_string_literal: true
 
-require_relative "sign_well/version"
+require "sign_well/version"
+require "faraday"
+require "faraday_middleware"
 
 module SignWell
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Client, "sign_well/client"
+  autoload :Resource, "sign_well/resource"
+
+  #Endpoints
+  
+  autoload :DocumentResource, "sign_well/resources/document_resource"
+
+  # Responder
+  autoload :Response, "sign_well/response"
+
 end
