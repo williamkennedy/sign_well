@@ -11,6 +11,7 @@ module SignWell
   #Endpoints
   
   autoload :DocumentResource, "sign_well/resources/document_resource"
+  autoload :TemplateResource, "sign_well/resources/template_resource"
 
   # Responder
   autoload :Response, "sign_well/response"

@@ -18,7 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
-Every request returns a response object. You can call `body` or `to_object` on this to get either the json body or a Ruby object.
+Every request returns a `SignWell::Response` object. You can call `body` or `to_object` on this to get either the json body or a Ruby object.
+
 
 ### Setup
 
@@ -29,7 +30,7 @@ client = SignWell::Client.new(x_api_key: ENV['X_API_KEY'])
 
 ```
 
-## Get Document
+## [Get Document](https://developers.signwell.com/reference/get_api-v1-documents-id--1)
 
 ```
 response = client.document('docment_id')
@@ -37,22 +38,44 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## Create Document
+## [Create Document](https://developers.signwell.com/reference/post_api-v1-documents-1)
 
 ```
-client.create_document(test_mode: true, files: [{name: 'test', file_url: 'exmpaledoc.com'}], recipients: [{id: 1, email: 'william@test.com'}])
+response = client.create_document(test_mode: true, files: [{name: 'test', file_url: 'exmpaledoc.com'}], recipients: [{id: 1, email: 'william@test.com'}])
 response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## Create Document from Template
+## [Create Document from Template](https://developers.signwell.com/reference/post_api-v1-document-templates-documents-1)
 
 ```
-client.create_document_from_template(test_mode: true, template_id: '123')
+response = client.create_document_from_template(test_mode: true, template_id: 'template_id',  recipients: [{id: 1, email: 'test@test.com', placeholder_name: 'Customer', name: 'Customer'}, {id: 2, email: 'sender@sent.com',name: 'William',  placeholder_name: 'Document Sender'}], template_fields: [{api_id: 'TextField_1', value: 'hello'}, {api_id: 'CheckBox_1', value: true}
+])
 response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
+## [Update and Send Document](https://developers.signwell.com/reference/post_api-v1-documents-id-send-1)
+
+```
+response = client.update_and_send_document(document_id, test_mode: true, embedded_signing: true)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## [Delete Document](https://developers.signwell.com/reference/delete_api-v1-documents-id--1)
+
+```
+response = client.delete_document(document_id)
+```
+
+## [Completed PDF](https://developers.signwell.com/reference/get_api-v1-documents-id-completed-pdf-1)
+
+```
+response = client.completed_pdf(document_id, test_mode: true, url_only: true)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
 
 
 

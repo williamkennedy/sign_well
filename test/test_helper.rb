@@ -19,7 +19,23 @@ class MiniTest::Test
   def stub_post_request(path, response:, body: {})
     Faraday::Adapter::Test::Stubs.new do |stub|
       stub.post("/api/v1/#{path}", **body) do |env|
-        [200, {'Content-Type': "application/json"}, response]
+        [201, {'Content-Type': "application/json"}, response]
+      end
+    end
+  end
+
+  def stub_patch_request(path, response:,body: {})
+    Faraday::Adapter::Test::Stubs.new do |stub|
+      stub.patch("/api/v1/#{path}", **body) do |env|
+        [201, {'Content-Type': "application/json"}, response]
+      end
+    end
+  end
+
+  def stub_delete_request(path)
+    Faraday::Adapter::Test::Stubs.new do |stub|
+      stub.delete("/api/v1/#{path}") do |env|
+        [204, {'Content-Type': "application/json"}]
       end
     end
   end

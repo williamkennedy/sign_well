@@ -1,0 +1,70 @@
+{
+  "id": "f8ccbdb3-6696-4d0e-babe-d04ce43a8e35",
+  "allow_decline": true,
+  "apply_signing_order": false,
+  "archived": false,
+  "copied_contacts": [],
+  "custom_requester_name": "Mace Windu",
+  "custom_requester_email": "sadie_homenick@mcclure.org",
+  "created_at": "2022-02-15T15:41:18Z",
+  "decline_redirect_url": "https://www.domain.com/decline_path/",
+  "embedded_signing": false,
+  "embedded_edit_url": "",
+  "expires_in": 365,
+  "fields": [
+    [
+      {
+        "api_id": "CheckBox_4",
+        "page": 1,
+        "required": true,
+        "type": "CheckBox",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "recipient_id": "1"
+      }
+    ]
+  ],
+  "message": "Normal Body",
+  "metadata": {
+    "key1": "value1",
+    "key2": "value2"
+  },
+  "name": "Agreement",
+  "recipients": [
+    {
+      "id": "1",
+      "body": null,
+      "email": "johnson_torphy@jaskolski-kuhn.net",
+      "name": "Cyclops II",
+      "passcode": "123",
+      "subject": null,
+      "status": "draft",
+      "attachment_requests": [
+        {
+          "name": "freckle-thank/rem.avi",
+          "url": "https://www.signwell.com/document_attachments/7adNJKYK3Mu8zgY37oLZuzODglL/?access=6ee87d42-46f9-4981-be79-83033df63722",
+          "required": true
+        }
+      ],
+      "signing_url": "https://www.signwell.com/docs/3dd6f9fc47/",
+      "send_email": null,
+      "message": null
+    }
+  ],
+  "redirect_url": "https://www.domain.com/redirect_path/",
+  "reminders": true,
+  "requester_email_address": "stealy_10@example.org",
+  "status": "Draft",
+  "subject": "Normal subject",
+  "test_mode": false,
+  "updated_at": "2022-02-15T15:41:18Z",
+  "files": [
+    {
+      "name": "polish-marine/error.pages",
+      "pages_number": 1
+    }
+  ]
+}

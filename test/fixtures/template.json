@@ -1,0 +1,98 @@
+{
+  "id": "b29de88f-f213-42a7-8281-34a06c1efda4",
+  "apply_signing_order": false,
+  "archived": false,
+  "created_at": "2022-02-15T15:41:20Z",
+  "copied_placeholders": [
+    {
+      "id": "3",
+      "body": null,
+      "name": "Cc 1",
+      "subject": null,
+      "message": null
+    },
+    {
+      "id": "4",
+      "body": null,
+      "name": "Cc 2",
+      "subject": null,
+      "preassigned_recipient_name": "The Warpath II",
+      "preassigned_recipient_email": "raeann_considine@pfannerstill.name",
+      "message": null
+    }
+  ],
+  "decline_redirect_url": "http://johnson.name/dusty",
+  "expires_in": 10,
+  "message": "Sapiente omnis cumque in.",
+  "name": "defend_academy/nesciunt.odt",
+  "placeholders": [
+    {
+      "id": "1",
+      "body": null,
+     "name": "Steel 1",
+      "subject": null,
+      "preassigned_recipient_name": "Mr Blob",
+      "preassigned_recipient_email": "consuelo.klein@macgyver.co",
+      "attachment_requests": [
+        {
+          "name": "nursery-minister/ut.doc",
+          "url": "https://www.signwell.com/document_attachments/w9PdpK1z9ZHXEZrzmrmlsoMBmzG/?access=f715a0c8-3036-4afa-a335-20172b000580",
+          "required": true
+        }
+      ],
+      "message": null
+    },
+    {
+      "id": "2",
+      "body": null,
+      "name": "Magnificent Hope Summers 2",
+      "subject": null,
+      "message": null
+    }
+  ],
+  "redirect_url": "http://stark.co/norberto",
+  "reminders": true,
+  "requester_email_address": "snowball.21@example.com",
+  "status": "Available",
+  "subject": "enim",
+  "updated_at": "2022-02-15T15:41:20Z",
+  "metadata": {
+    "odit": "est",
+    "possimus": "blanditiis"
+  },
+  "fields": [
+    [
+      {
+        "api_id": "Initials_8",
+        "page": 1,
+        "required": true,
+        "type": "Initials",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "placeholder_name": "Steel 1"
+      },
+      {
+        "api_id": "CheckBox_9",
+        "page": 2,
+        "required": true,
+        "type": "CheckBox",
+        "value": null,
+        "width": "86.0",
+        "height": "19.0",
+        "x": 1.1,
+        "y": 1.1,
+        "placeholder_name": "Magnificent Hope Summers 2"
+      }
+    ]
+  ],
+  "template_link": "https://www.signwell.com/new_doc/J4ywhXCsvd9mjxwB/",
+  "files": [
+    {
+      "name": "general-brown/in.odp",
+      "pages_number": 2
+    }
+  ]
+} 

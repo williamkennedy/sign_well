@@ -20,6 +20,26 @@ module SignWell
       DocumentResource.new(self).create_from_template(params)
     end
 
+    def update_and_send_document(id, params)
+      DocumentResource.new(self).update_and_send_document(id, params)
+    end
+
+    def delete_document(id)
+      DocumentResource.new(self).delete(id)
+    end
+
+    def completed_pdf(id, params)
+      DocumentResource.new(self).completed_pdf(id, params)
+    end
+
+    def template(id, params = {})
+      TemplateResource.new(self).get(id, params)
+    end
+
+    def create_template(params)
+      TemplateResource.new(self).create(params)
+    end
+
     def connection
       @connection ||= Faraday.new(url: BASE_URL) do |conn|
         conn.headers['X-Api-Key'] = x_api_key

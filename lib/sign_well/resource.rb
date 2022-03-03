@@ -19,5 +19,17 @@ module SignWell
         req.headers['Content-Type'] = 'application/json'
       end
     end
+
+    def patch_request(path, params)
+      client.connection.patch(path) do |req|
+        req.params = params
+        req.headers['Content-Type'] = 'application/json'
+        req.headers['Accept'] = 'application/json'
+      end
+    end
+
+    def delete_request(path)
+      client.connection.delete(path)
+    end
   end
 end

@@ -11,5 +11,17 @@ module SignWell
     def create_from_template(params)
       Response.new(post_request("document_templates/documents", params).body)
     end
+
+    def update_and_send_document(id, params)
+      Response.new(post_request("documents/#{id}/send", params).body)
+    end
+
+    def delete(id)
+      Response.new(delete_request("documents/#{id}"))
+    end
+
+    def completed_pdf(id, params)
+      Response.new(get_request("documents/#{id}/completed_pdf", params).body)
+    end
   end
 end
