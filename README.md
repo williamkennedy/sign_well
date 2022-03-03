@@ -78,6 +78,22 @@ response.to_object =>  OpenStruct
 ```
 
 
+## [Get Template](https://developers.signwell.com/reference/get_api-v1-document-templates-id--1)
+
+```
+response = client.template(tempate_id)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## Other requests
+
+If you can't find the method you're looking, you can call HTTP methods on the `client.connection`
+
+```
+client.connection.get(path)
+```
+
 
 ## Development
 
