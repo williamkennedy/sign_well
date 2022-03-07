@@ -86,29 +86,100 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
+## [Create Template](https://developers.signwell.com/reference/post_api-v1-document-templates-1)
+
+```
+body = {test_mode: true, "files"=>[{"name"=>"string.pdf", "file_url"=>"https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf"}],
+  "placeholders"=>[{"id"=>"string", "name"=>"string"}],
+  "draft"=>false,
+  "reminders"=>true,
+  "apply_signing_order"=>false,
+  "text_tags"=>false,
+  "allow_decline"=>true,
+  "fields"=>[[{"required"=>true, "fixed_width"=>false, "lock_sign_date"=>false, "date_format"=>"MM/DD/YYYY", "x"=>0, "y"=>0, "page"=>0, "placeholder_id"=>"string", "type"=>"date", "api_id"=>"string"}]],
+  "attachment_requests"=>[{"required"=>true, "name"=>"string", "placeholder_id"=>"string"}],
+  "name"=>"string",
+  "subject"=>"string",
+  "message"=>"string",
+  "expires_in"=>0}
+
+response = client.create_template(body)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## [Delete Template](https://developers.signwell.com/reference/delete_api-v1-document-templates-id--1)
+
+```
+client.delete_template(id)
+```
+
+## [Get API Application](https://developers.signwell.com/reference/get_api-v1-api-applications-id--1)
+
+```
+response = client.api_application(id)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## [Delete API Application](https://developers.signwell.com/reference/delete_api-v1-api-applications-id--1)
+
+```
+client.delete_api_application(id)
+```
+
+## [List Webhooks](https://developers.signwell.com/reference/get_api-v1-hooks-1)
+
+```
+response = client.list_web_hooks
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## [Create Webhooks](https://developers.signwell.com/reference/post_api-v1-hooks-1)
+
+```
+response = client.create_web_hook(test_mode: true, callback_url: 'https://test.com')
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
+## [Delete Webhook](https://developers.signwell.com/reference/delete_api-v1-hooks-id--1)
+
+```
+client.delete_web_hook(id)
+```
+
+## [Get Credentials](https://developers.signwell.com/reference/get_api-v1-me-1)
+
+```
+client.me
+```
+
+
 ## Other requests
 
-If you can't find the method you're looking, you can call HTTP methods on the `client.connection`
+If you can't find the method you're looking, you can call HTTP methods on the `client.connection` which is a Faraday object
 
-```
+  ```
 client.connection.get(path)
-```
+  ```
 
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+  To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sign_well. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/sign_well/blob/main/CODE_OF_CONDUCT.md).
+  Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sign_well. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/sign_well/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+  The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
 
-Everyone interacting in the SignWell project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sign_well/blob/main/CODE_OF_CONDUCT.md).
+  Everyone interacting in the SignWell project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sign_well/blob/main/CODE_OF_CONDUCT.md).

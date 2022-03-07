@@ -19,7 +19,7 @@ module SignWell
         OpenStruct.new(body.map { |key, val| [key, to_ostruct(val)] }.to_h)
       elsif body.is_a?(Array)
         body.map { |o| to_ostruct(o) }
-      else # Assumed to be a primitive value
+      else 
         body
       end
     end

@@ -40,6 +40,34 @@ module SignWell
       TemplateResource.new(self).create(params)
     end
 
+    def delete_template(id)
+      TemplateResource.new(self).delete(id)
+    end
+
+    def api_application(id, params = {})
+      ApiApplicationResource.new(self).get(id, params)
+    end
+
+    def delete_api_application(id)
+      ApiApplicationResource.new(self).delete(id)
+    end
+
+    def list_web_hooks
+      WebHookResource.new(self).list
+    end
+
+    def create_web_hook(params)
+      WebHookResource.new(self).create(params)
+    end
+
+    def delete_web_hook(id)
+      WebHookResource.new(self).delete(id)
+    end
+
+    def me
+      MeResource.new(self).get
+    end
+
     def connection
       @connection ||= Faraday.new(url: BASE_URL) do |conn|
         conn.headers['X-Api-Key'] = x_api_key

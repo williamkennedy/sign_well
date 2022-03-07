@@ -42,7 +42,7 @@ class MiniTest::Test
 
   def assert_response_body(response)
     assert response.is_a?(SignWell::Response)
-    assert_equal Hash, response.body.class
+    assert [Hash, Array].include?(response.body.class)
     assert_equal OpenStruct, response.to_object.class
   end
 end

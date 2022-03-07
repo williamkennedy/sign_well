@@ -1,0 +1,19 @@
+{
+  "id": "0bc2258e-1717-4f1e-8982-24a1ba6c2100",
+  "callback_urls": [],
+  "created_at": "2022-02-15T15:41:22Z",
+  "name": "Stronghold",
+  "updated_at": "2022-02-15T15:41:22Z",
+  "owner": {
+    "id": "fcbadada-3119-4623-bcb0-01edc3417fb8",
+    "account_id": "904f562b-021c-4e02-94a8-84bb57c866f1",
+    "name": "Lighthouse Chief",
+    "email": "32.chief.lighthouse@example.net"
+  },
+  "preferences": {
+    "button_text_color": "7C91D2",
+    "custom_logo_file": "/home/cpet/RubymineProjects/docsketch/tmp/test_files/0/api_application_preferences/000/000/002/original.png",
+    "link_text_color": "A3A96D",
+    "primary_color": "32C589"
+  }
+}

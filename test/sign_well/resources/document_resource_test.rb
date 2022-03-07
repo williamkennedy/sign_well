@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class DocumentResourceTest < Minitest::Test
-  def test_get
+  def test_get_document
     id = "123"
     stubs = stub_get_request("documents/#{id}", response: File.read("test/fixtures/document.json"))
     client = SignWell::Client.new(x_api_key: "key", stubs: stubs)
@@ -9,7 +9,7 @@ class DocumentResourceTest < Minitest::Test
     assert_response_body(response)
   end
 
-  def test_create
+  def test_create_document
     body = { test_mode: true }
     stubs = stub_post_request("documents", response: File.read("test/fixtures/documents.json", body: body))
     client = SignWell::Client.new(x_api_key: "key", stubs: stubs)

@@ -1,0 +1,40 @@
+{
+  "id": "73818f95-d9c0-465d-b668-6bb6f3a0e93a",
+  "role": "owner",
+  "archived": false,
+  "user": {
+    "id": "9ebe6496-8667-4cc3-9d02-acd605ca2a9b",
+    "name": "Fart",
+    "email": "fart.41@example.net",
+    "has_google_registration": false,
+    "first_name": "Fart"
+  },
+  "account": {
+    "id": "9981e8e8-afac-4af1-93ca-78f49b8e8f83",
+    "name": null,
+    "plan_tier": "free",
+    "active_templates": 0,
+    "can_create_template": true,
+    "can_create_tracking_document": true,
+    "can_create_completion_document": true,
+    "active_users": [
+      {
+        "id": "9ebe6496-8667-4cc3-9d02-acd605ca2a9b",
+        "name": "Fart",
+        "email": "fart.41@example.net",
+        "has_google_registration": false
+      }
+    ]
+  },
+  "contact": {
+    "id": "843452d6-84a8-466b-a625-dffb880e3724",
+    "email": "fart.41@example.net",
+    "name": "Fart",
+    "company_name": "Schulist, Sauer and Wiza",
+    "phone_number": "866-774-6029 x18841",
+    "alt_phone_number": "(374) 314-8193",
+    "website": "http://berge.net/marc_howell",
+    "initials": "FA",
+    "archived": false
+  }
+}
