@@ -23,7 +23,9 @@ Every request returns a `SignWell::Response` object. You can call `body` or `to_
 
 ### Setup
 
-You will need an `x_api_key` from SignWell to start. After that, you simply initialize the client. 
+You will `Ruby 2.7` or greater. 
+
+You will need an `x_api_key` from SignWell to start. After that, you simply initialize the client.
 
 ```
 client = SignWell::Client.new(x_api_key: ENV['X_API_KEY'])
