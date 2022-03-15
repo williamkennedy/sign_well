@@ -4,8 +4,8 @@
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'sign_well'
+```bash
+bundle add sign_well
 ```
 
 And then execute:
