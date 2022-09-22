@@ -32,7 +32,7 @@ client = SignWell::Client.new(x_api_key: ENV['X_API_KEY'])
 
 ```
 
-## [Get Document](https://developers.signwell.com/reference/get_api-v1-documents-id--1)
+## [Get Document](https://developers.signwell.com/reference/get_api-v1-document)
 
 ```
 response = client.document('docment_id')
@@ -40,7 +40,7 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Create Document](https://developers.signwell.com/reference/post_api-v1-documents-1)
+## [Create Document](https://developers.signwell.com/reference/post_api-v1-documents)
 
 ```
 response = client.create_document(test_mode: true, files: [{name: 'test', file_url: 'exmpaledoc.com'}], recipients: [{id: 1, email: 'william@test.com'}])
@@ -57,7 +57,7 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Update and Send Document](https://developers.signwell.com/reference/post_api-v1-documents-id-send-1)
+## [Update and Send Document](https://developers.signwell.com/reference/post_api-v1-documents-id-send)
 
 ```
 response = client.update_and_send_document(document_id, test_mode: true, embedded_signing: true)
@@ -65,13 +65,13 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Delete Document](https://developers.signwell.com/reference/delete_api-v1-documents-id--1)
+## [Delete Document](https://developers.signwell.com/reference/delete_api-v1-documents-id)
 
 ```
 response = client.delete_document(document_id)
 ```
 
-## [Completed PDF](https://developers.signwell.com/reference/get_api-v1-documents-id-completed-pdf-1)
+## [Completed PDF](https://developers.signwell.com/reference/get_api-v1-documents-id-completed-pdf)
 
 ```
 response = client.completed_pdf(document_id, test_mode: true, url_only: true)
@@ -80,7 +80,7 @@ response.to_object =>  OpenStruct
 ```
 
 
-## [Get Template](https://developers.signwell.com/reference/get_api-v1-document-templates-id--1)
+## [Get Template](https://developers.signwell.com/reference/get_api-v1-document-templates-id-)
 
 ```
 response = client.template(tempate_id)
@@ -88,7 +88,7 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Create Template](https://developers.signwell.com/reference/post_api-v1-document-templates-1)
+## [Create Template](https://developers.signwell.com/reference/post_api-v1-document-templates)
 
 ```
 body = {test_mode: true, "files"=>[{"name"=>"string.pdf", "file_url"=>"https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf"}],
@@ -110,13 +110,13 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Delete Template](https://developers.signwell.com/reference/delete_api-v1-document-templates-id--1)
+## [Delete Template](https://developers.signwell.com/reference/delete_api-v1-document-templates-id)
 
 ```
 client.delete_template(id)
 ```
 
-## [Get API Application](https://developers.signwell.com/reference/get_api-v1-api-applications-id--1)
+## [Get API Application](https://developers.signwell.com/reference/get_api-v1-api-applications-id)
 
 ```
 response = client.api_application(id)
@@ -124,13 +124,13 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Delete API Application](https://developers.signwell.com/reference/delete_api-v1-api-applications-id--1)
+## [Delete API Application](https://developers.signwell.com/reference/delete_api-v1-api-applications-id)
 
 ```
 client.delete_api_application(id)
 ```
 
-## [List Webhooks](https://developers.signwell.com/reference/get_api-v1-hooks-1)
+## [List Webhooks](https://developers.signwell.com/reference/get_api-v1-hooks)
 
 ```
 response = client.list_web_hooks
@@ -138,7 +138,7 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Create Webhooks](https://developers.signwell.com/reference/post_api-v1-hooks-1)
+## [Create Webhooks](https://developers.signwell.com/reference/post_api-v1-hooks)
 
 ```
 response = client.create_web_hook(test_mode: true, callback_url: 'https://test.com')
@@ -146,13 +146,13 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Delete Webhook](https://developers.signwell.com/reference/delete_api-v1-hooks-id--1)
+## [Delete Webhook](https://developers.signwell.com/reference/delete_api-v1-hooks-id)
 
 ```
 client.delete_web_hook(id)
 ```
 
-## [Get Credentials](https://developers.signwell.com/reference/get_api-v1-me-1)
+## [Get Credentials](https://developers.signwell.com/reference/get_api-v1-me)
 
 ```
 client.me
