@@ -15,14 +15,14 @@ module SignWell
 
     def post_request(path, params)
       client.connection.post(path) do |req|
-        req.params = params
+        req.body = params.to_json
         req.headers['Content-Type'] = 'application/json'
       end
     end
 
     def patch_request(path, params)
       client.connection.patch(path) do |req|
-        req.params = params
+        req.body = params.to_json
         req.headers['Content-Type'] = 'application/json'
         req.headers['Accept'] = 'application/json'
       end
