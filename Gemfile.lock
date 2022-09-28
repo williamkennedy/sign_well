@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sign_well (1.0.1)
+    sign_well (1.0.2)
       faraday (~> 1.7)
       faraday_middleware (~> 1.1)
 
