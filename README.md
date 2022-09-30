@@ -48,7 +48,7 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
-## [Create Document from Template](https://developers.signwell.com/reference/post_api-v1-document-templates-documents-1)
+## [Create Document from Template](https://developers.signwell.com/reference/post_api-v1-document-templates-documents)
 
 ```
 response = client.create_document_from_template(test_mode: true, template_id: 'template_id',  recipients: [{id: 1, email: 'test@test.com', placeholder_name: 'Customer', name: 'Customer'}, {id: 2, email: 'sender@sent.com',name: 'William',  placeholder_name: 'Document Sender'}], template_fields: [{api_id: 'TextField_1', value: 'hello'}, {api_id: 'CheckBox_1', value: true}
