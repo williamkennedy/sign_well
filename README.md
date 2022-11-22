@@ -4,7 +4,7 @@
 
 If you would like to support this project and haven't signed up to Signwell yet, please consider using this [referral link](https://www.signwell.com/?via=william-gh).  
 
-This gem has been battle tested at [Low](low.ie), the best place in Ireland to go for life insurance. We use Signwell to process large 25 page templates. This gem helps creates 1000's of documents a month. 
+This gem has been battle tested at [Low](https://low.ie), the best place in Ireland to go for life insurance. We use Signwell to process large 25 page templates. This gem helps creates 1000's of documents a month. 
 
 ## Installation
 
