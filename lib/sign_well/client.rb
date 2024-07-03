@@ -11,7 +11,7 @@ module SignWell
     def document(id, params = {})
       DocumentResource.new(self).get(id, params)
     end
-    
+
     def create_document(params)
       DocumentResource.new(self).create(params)
     end
@@ -26,6 +26,10 @@ module SignWell
 
     def delete_document(id)
       DocumentResource.new(self).delete(id)
+    end
+
+    def completed_pdf(id, params)
+      DocumentResource.new(self).completed_pdf(id, params)
     end
 
     def remind_document(id, params = {})
