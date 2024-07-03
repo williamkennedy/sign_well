@@ -28,8 +28,8 @@ module SignWell
       DocumentResource.new(self).delete(id)
     end
 
-    def completed_pdf(id, params)
-      DocumentResource.new(self).completed_pdf(id, params)
+    def remind_document(id, params = {})
+      DocumentResource.new(self).remind(id, params)
     end
 
     def template(id, params = {})

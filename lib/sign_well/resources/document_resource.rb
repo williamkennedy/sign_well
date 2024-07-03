@@ -23,5 +23,9 @@ module SignWell
     def completed_pdf(id, params)
       Response.new(get_request("documents/#{id}/completed_pdf", params).body)
     end
+
+    def remind(id, params)
+      Response.new(post_request("documents/#{id}/remind", params).body)
+    end
   end
 end
