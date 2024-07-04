@@ -71,6 +71,14 @@ response.body => Hash of the JSON.body
 response.to_object =>  OpenStruct 
 ```
 
+## [Send Reminder]( https://developers.signwell.com/reference/post_api-v1-documents-id-remind)
+
+```
+response = client.remind_document(document_id, test_mode: true, embedded_signing: true)
+response.body => Hash of the JSON.body
+response.to_object =>  OpenStruct 
+```
+
 ## [Delete Document](https://developers.signwell.com/reference/delete_api-v1-documents-id--1)
 
 ```
