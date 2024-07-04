@@ -42,6 +42,14 @@ class DocumentResourceTest < Minitest::Test
     assert_equal 204, response.to_object.status
   end
 
+  def test_remind_document
+    id = "123"
+    stubs = stub_post_request("documents/#{id}/remind", response: File.read("test/fixtures/document.json"))
+    client = SignWell::Client.new(x_api_key: "key", stubs: stubs)
+    response = client.remind_document(id)
+    assert_response_body(response)
+  end
+
   def test_completed_pdf
     id = "123"
     stubs = stub_get_request("documents/#{id}/completed_pdf", response: File.read("test/fixtures/completed_pdf.json"))
