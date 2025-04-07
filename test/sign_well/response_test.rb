@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ResponseTest < MiniTest::Test
+class ResponseTest < Minitest::Test
   def test_to_ostruct
     body = File.read('test/fixtures/example_json.json')
     response = SignWell::Response.new(JSON.parse(body))
