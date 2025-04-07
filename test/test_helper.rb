@@ -7,7 +7,7 @@ require "minitest/autorun"
 require "faraday"
 require 'json'
 
-class MiniTest::Test
+class Minitest::Test
   def stub_get_request(path, response:)
     Faraday::Adapter::Test::Stubs.new do |stub|
       stub.get("/api/v1/#{path}") do |env|

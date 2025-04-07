@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ClientTest < MiniTest::Test
+class ClientTest < Minitest::Test
   def test_initialize
     client = SignWell::Client.new(x_api_key: 'x_api_key')
     assert_equal SignWell::Client, client.class
